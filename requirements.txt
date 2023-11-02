@@ -1,0 +1,10 @@
+Django 
+djangorestframework
+psycopg2-binary
+python-decouple
+# для работы с картинками
+Pillow
+# для генерации swagger
+drf-yasg
+#  для фильтрации и поиска
+django-filter

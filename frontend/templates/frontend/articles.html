@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Articles</title>
+    <style>
+        p {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    
+    {% for article in articles%}
+
+        <p>{{ article.title }}</p>
+        <p>{{ article.text }}</p>
+        <p>{{ article.created_at }}</p>
+        <p><img src="{{ article.image.url }}" alt="" ></p>
+    
+    {% endfor %}
+
+</body>
+</html>
